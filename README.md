@@ -1,16 +1,56 @@
-# React + Vite
+# GitHub User Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app to search for any GitHub user and see their profile details.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Search a GitHub user by username (click **Search** or press **Enter**)
+- Shows the user's avatar, name, bio, public repos and followers
+- Shows a loading message while fetching
+- Shows an error if the username is empty or the user is not found
 
-## React Compiler
+## Tech Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://react.dev/)
+- [Vite](https://vite.dev/)
+- [GitHub REST API](https://docs.github.com/en/rest/users/users) (`https://api.github.com/users/{username}`)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Talrejasaniya/GitHub-User-Search.git
+   cd GitHub-User-Search
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+4. Open the link shown in the terminal (usually `http://localhost:5173`).
+
+## Scripts
+
+| Command           | What it does                     |
+| ----------------- | -------------------------------- |
+| `npm run dev`     | Start the development server     |
+| `npm run build`   | Build the app for production     |
+| `npm run preview` | Preview the production build     |
+| `npm run lint`    | Check the code with ESLint       |
+
+## Project Structure
+
+```
+src/
+├── App.jsx      # Search logic and UI
+├── github.css   # Styles for the search box, button and user card
+├── index.css    # Global page styles
+└── main.jsx     # App entry point
+```
+
+## Note
+
+The GitHub API allows about 60 requests per hour without logging in. If you search too many times, you may get an error for a while.
