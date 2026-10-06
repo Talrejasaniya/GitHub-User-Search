@@ -1,0 +1,52 @@
+.container{
+border-radius: 15px;
+border: 5px solid black;
+padding:50px;
+margin-top: auto;
+margin-bottom: auto;
+margin-left:10px;
+margin-right: 10px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.card{
+border-radius: 15px;
+border: 3px solid green;
+padding:10px;
+margin: 10px;
+}
+.card img {
+    border-radius: 50%;
+}
+.container input {
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 10px 15px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.error {
+    color: red;
+}
+ 
+.container button{
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+}
+
+.container button:hover{
+    color: black;
+    background-color: white;
+}
