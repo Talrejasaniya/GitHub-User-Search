@@ -51,6 +51,3 @@ src/
 └── main.jsx     # App entry point
 ```
 
-## Note
-
-The GitHub API allows about 60 requests per hour without logging in. If you search too many times, you may get an error for a while.
